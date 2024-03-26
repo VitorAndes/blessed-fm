@@ -40,11 +40,11 @@ export default function Page() {
             <CarouselContent className="lg:w-[750px]">
               {products?.map((product) => {
                 return (
-                  <CarouselItem key={product.id} className="lg:basis-1/2">
+                  <CarouselItem key={product.id} className="md:basis-1/2">
                     <Card className="bg-sky-300/20 border-none">
                       <CardContent className="flex md:aspect-square items-center mx-auto justify-center p-0 lg:h-[300px] lg:w-[300px]">
                         <Image
-                          className="w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] rounded-2xl shadow-lg shadow-sky-200 cursor-grab active:cursor-grabbing"
+                          className="w-[250px] h-[300px] lg:w-[300px] lg:h-[300px] rounded-2xl shadow-lg shadow-sky-200 cursor-grab active:cursor-grabbing"
                           src={product.src}
                           alt={product.alt}
                           width={300}

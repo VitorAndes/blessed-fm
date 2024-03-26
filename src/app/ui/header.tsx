@@ -73,8 +73,8 @@ export function Header() {
 
         <nav className="hidden max-sm:flex">
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <Bars3Icon className="h-6 w-6 text-gray-500" />
+            <DropdownMenuTrigger className="mr-6">
+              <Bars3Icon className="h-8 w-8 text-gray-500" />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               {links.map((link) => {
