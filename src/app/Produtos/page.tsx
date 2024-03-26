@@ -4,8 +4,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { getProducts } from "@/data/products";
 import { useQuery } from "@tanstack/react-query";
@@ -21,7 +19,7 @@ export default function Page() {
 
   return (
     <Reveal>
-      <div className="flex flex-col items-center text-center space-y-3">
+      <div className="flex flex-col items-center text-center space-y-4">
         <div className="text-left space-y-3">
           <h1 className="font-bold text-2xl  text-black">Produtos</h1>
           <p className="font-medium">
@@ -39,14 +37,14 @@ export default function Page() {
               }),
             ]}
           >
-            <CarouselContent className="md:w-[750px]">
+            <CarouselContent className="lg:w-[750px]">
               {products?.map((product) => {
                 return (
-                  <CarouselItem key={product.id} className="md:basis-1/2">
+                  <CarouselItem key={product.id} className="lg:basis-1/2">
                     <Card className="bg-sky-300/20 border-none">
-                      <CardContent className="flex aspect-square items-center mx-auto justify-center p-0">
+                      <CardContent className="flex md:aspect-square items-center mx-auto justify-center p-0 lg:h-[300px] lg:w-[300px]">
                         <Image
-                          className="w-[300px] h-[300px] rounded-2xl shadow-lg shadow-sky-200 cursor-grab active:cursor-grabbing"
+                          className="w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] rounded-2xl shadow-lg shadow-sky-200 cursor-grab active:cursor-grabbing"
                           src={product.src}
                           alt={product.alt}
                           width={300}
@@ -58,8 +56,6 @@ export default function Page() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="sm:hidden" variant="default" />
-            <CarouselNext className="sm:hidden" variant="default" />
           </Carousel>
         </div>
       </div>
