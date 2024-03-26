@@ -22,7 +22,7 @@ export default function Home() {
             <h1 className="font-bold text-2xl text-black">
               Sobre Nós
             </h1>
-            <p className="max-sm:text-xs font-medium">
+            <p className="font-medium">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
               harum tenetur nesciunt cupiditate porro sed assumenda iste odio,
               soluta quas odit unde, voluptas rerum sapiente alias reprehenderit
