@@ -17,11 +17,11 @@ export default function RootLayout({
           <title>BlessedFm</title>
         </head>
         <body
-          className={`${inter.className} bg-gradient-to-tl from-teal-200 via-sky-400 to-teal-50 text-slate-700 antialiased flex justify-center items-center min-h-screen`}
+          className={`${inter.className} bg-gradient-to-tl from-teal-200 via-sky-400 to-teal-50 text-slate-700 antialiased lg:flex flex-col justify-center items-center md:min-h-screen`}
         >
-          <div className="w-[1152px]">
+          <div className="w-full lg:w-[1152px]">
             <Header />
-            <div className="bg-sky-700/30 shadow-md shadow-slate-500 p-8 h-[600px] rounded-lg">
+            <div className="bg-sky-700/30 shadow-md shadow-slate-500 p-8 max-sm:min-h-screen lg:h-[600px] rounded-lg">
               {children}
             </div>
           </div>
