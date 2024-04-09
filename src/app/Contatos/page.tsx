@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { Phone, Mail, Instagram } from "lucide-react";
-import { Reveal } from "../ui/reveal";
+import { Reveal } from "../components/reveal";
 
 export default function page() {
   return (

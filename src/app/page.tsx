@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { Reveal } from "./ui/reveal";
+import { Reveal } from "./components/reveal";
 
 export default function Home() {
   return (
     <>
       <Reveal>
         <section
-          className="flex lg:flex-row flex-col items-center space-y-4 p-8 py-24 mx-12"
+          className="flex lg:flex-row flex-col items-center space-y-4 p-8 py-24 lg:mx-12"
           id="Sobre"
         >
           <div className="flex-1 items-center">

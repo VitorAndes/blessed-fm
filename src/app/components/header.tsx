@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,7 +15,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/app/components/ui/dropdown-menu";
 
 const links = [
   {
@@ -39,7 +39,7 @@ export function Header() {
   const pathname = usePathname();
   return (
     <>
-      <div className="bg-sky-500/60 shadow-lg shadow-slate-700 backdrop-blur-sm p-4 rounded-md flex justify-between items-center font-medium mb-4">
+      <div className="bg-[#5FA8D3] shadow-lg shadow-slate-700 backdrop-blur-sm p-4 rounded-md flex justify-between items-center font-medium mb-4">
         <div className="flex items-center gap-4">
           <Image
             className="rounded-full"
